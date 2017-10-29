@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="" class=no-js>
+	<head>
+		<meta charset=utf-8>
+		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+		<meta itemprop=image content=/images/share-image.png>
+		<title>Draw me a letter</title>
+		<meta name=description content="Maurann Stein portfolio website">
+		<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<link rel=apple-touch-icon href=/images/favicon.ico type=image/x-icon>
+		<link rel=icon href=/images/favicon.ico type=image/x-icon>
+		<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+		<link rel="stylesheet" href="../assets/main.css">
+	</head>
+	<body class="case">
+		<main>
+			<article class="downward">
+				<div class="case-text-container">
+					<a href="../index.html"><h4 style="margin-bottom: 60px;">Maurann Stein</h4></a>
+					<p>Self initiated project, 2014</p>
+					<h2>Draw me a letter</h2>
+					<h3>A program that creates a map of the hidden gestures resulting from typing on a computer keyboard.
+					</h3>
+					<p><a class="inline" target="_blank" href="http://maurann.com/draw-me-a-letter/">Visit the site</a></p>
+				</div>
+				<div class="case-asset-container">
+					<figure>
+						<img class="shadow" src="../assets/images/DMAL.gif">
+					</figure>
+				</div>
+				<div class="case-text-container">
+					<h3>Tracing hidden gestures</h3>
+					<p>
+						I wanted to create a tool that explores an alternative way to document text typed on the computer. I tried to focus on the visual trace that results from our typing on the keyboard and see if any patterns evolve.
+					</p>
+					<p>
+						One aspect I especially love about this project is the way it tracks my mistakes when I type — unlike most digital writing tools. Anytime I hit the backspace, a line is drawn and added to the encrypted image, similar to when I write by hand.
+					</p>
+					<p>
+						After I developed the basic idea of what I wanted to build, I started to think about its design and how users might approach it. I sketched out a few ideas and came up with a simple interface that puts the user's visual unput at the center.
+					</p>
+					<p>
+						It was quick, and I didn't have much time to iterate or research, and I couldn’t really predict what the traces will look like. But as I was working and thinking about it, I realized it could be really cool if I added a feature that will allow my users to download and save their text-drawing. Another functionality I wanted to add was to allow users to view their input in text-form.
+					</p>
+				</div>
+				<figure class="left-half">
+					<img src="../assets/images/DMAL-11.png">
+					<figcaption>Home position: hand position for type writing on a QWERTZ keyboard.</figcaption>
+				</figure>
+				<figure class="third-qtr">
+					<img src="../assets/images/DMAL-12.jpg">
+					<img src="../assets/images/DMAL-13.jpg">
+					<figcaption>Jessica Greenfield’s Hidden Gestures: a collection of drawings showcasing the unseen gestures of designers in a digital design process.</figcaption>
+				</figure>
+				<div class="case-text-container">
+					<h3>Mapping the keyboard</h3>
+					<p>
+						I had to proportionately map out all the keyboard keys in order for the tracking to be accurate. So I created coordinates for every key based on it placement on the keyboard, and later referenced these points in a function that draws lines between two points. This way I was able to update the last typed key as the place to which the line will continue.
+					</p>
+				</div>
+				<div class="case-asset-container">
+					<figure class="whole">
+						<img src="../assets/images/DMAL-16.jpg">
+					</figure>
+				</div>
+				<figure class="left-half">
+					<img src="../assets/images/DMAL-14.png">
+				</figure>
+				<figure class="right-half">
+					<img src="../assets/images/DMAL-15.png">
+				</figure>
+				<div class="case-text-container">
+					<h3>Features</h3>
+					<p>
+						<b>Cover / discover your letter</b>: Lets users discover or hide their text-input.</br>
+						<b>Clear text</b>: Lets users clear the screen and their inputted text to start afresh.</br>
+						<b>Download your letter</b>: This function translates the marks created with SVG lines to a downloadable png.</br>
+						<b>Gradient progression</b>: With every key pressed, the line’s hex value progresses and gradually shifts the color of the drawing. This feature is a time indicator, allowing readers to try to decrypt the image and figure out which words were typed.
+					</p>
+				</div>
+				<div class="case-asset-container">
+					<figure class="whole">
+						<img src="../assets/images/DMAL-eyes.gif">
+					</figure>
+				</div>
+				<figure class="first-qtr">
+					<img src="../assets/images/DMAL-01.png">
+				</figure>
+				<figure class="second-qtr">
+					<img src="../assets/images/DMAL-02.png">
+				</figure>
+				<figure class="third-qtr">
+					<img src="../assets/images/DMAL-03.png">
+				</figure>
+				<figure class="fourth-qtr">
+					<img src="../assets/images/DMAL-04.png">
+				</figure>
+				<figure class="first-qtr">
+					<img src="../assets/images/DMAL-05.png">
+				</figure>
+				<figure class="second-qtr">
+					<img src="../assets/images/DMAL-06.png">
+				</figure>
+				<figure class="third-qtr">
+					<img src="../assets/images/DMAL-07.png">
+				</figure>
+				<figure class="fourth-qtr">
+					<img src="../assets/images/DMAL-08.png">
+				</figure>
+				<div class="case-text-container">
+					<h3>A visual diary</h3>
+					<p>
+						I wanted to have some fun with my new tool, so I collected my visual diary entries and created a little book showing the texts next to their encrypted images. For the cover I printed a keyboard-jacket printed on silver paper that can be unfolded and used to try to decrypt the messages.
+					</p>
+				</div>
+				<div class="case-asset-container">
+					<figure>
+						<img src="../assets/images/DMAL-07.jpg">
+					</figure>
+				</div>
+				<div class="case-asset-container">
+					<figure>
+						<img src="../assets/images/DMAL-10.jpg">
+					</figure>
+				</div>
+				<div class="case-asset-container">
+					<figure>
+						<img src="../assets/images/DMAL-08.jpg">
+					</figure>
+				</div>
+				<div class="case-asset-container">
+					<figure>
+						<img src="../assets/images/DMAL-09.jpg">
+					</figure>
+				</div>
+			</article>
+			<section class="next-prev"">
+				<h3 class="previous-project"><a href="anti-alias.html">&#9754; Previous project</a></h3>
+				<h3 class="next-project"><a href="20-days-20-nights.html">Next project &#9755;</a></h3>
+			</section>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../assets/js/vendor/jquery.simpleWeather.min.js"></script>
+  		<script type="text/javascript" src="../assets/js/index.js"></script>
+	</body>
+</html>

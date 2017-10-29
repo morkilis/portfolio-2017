@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="" class=no-js>
+	<head>
+		<meta charset=utf-8>
+		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+		<meta itemprop=image content=/images/share-image.png>
+		<title>Checkout flow redesign</title>
+		<meta name=description content="Maurann Stein portfolio website">
+		<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<link rel=apple-touch-icon href=/images/favicon.ico type=image/x-icon>
+		<link rel=icon href=/images/favicon.ico type=image/x-icon>
+		<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+		<link rel="stylesheet" href="../assets/main.css">
+	</head>
+	<body class="case">
+		<main>
+			<article class="downward">
+				<div class="case-text-container" style="margin-bottom: 80px;">
+					<a href="../index.html"><h4 style="margin-bottom: 60px;">Maurann Stein</h4></a>
+					<p>Helix, Aug—June 2017</p>
+					<h2>Balancing speed and accuracy</h2>
+					<h3>Cleaner and smarter checkout flows that help teach customers what the Helix platform is all about.</h3>
+				</div>
+				<!-- <div class="case-asset-container">
+					<figure>
+						<video  width="100%" height="auto" controls autoplay class="shadow" poster="../assets/images/checkout-flow-cover.png">
+						  	<source src="../assets/videos/Helix-purchase-flow-v2.mp4" type="video/mp4">
+						  	<source src="/../assets/videos/Helix-purchase-flow-v2.ogg" type="video/ogg">
+						  	Your browser does not support the video tag.
+						</video>
+						<figcaption>The final redesign of the checkout flow showing a "first-purchase" checkout, happy-path, made by a new Helix customer.</figcaption>
+					</figure>
+				</div> -->
+				<figure class="first-qtr">
+					<img src="../assets/images/checkout-mobileflow-01.png">
+					<figcaption>Second purchase flow on mobile</figcaption>
+				</figure>
+				<figure class="second-qtr">
+					<img src="../assets/images/checkout-mobileflow-02.png">
+				</figure>
+				<figure class="third-qtr">
+					<img src="../assets/images/checkout-mobileflow-03.png">
+				</figure>
+				<figure class="fourth-qtr">
+					<img src="../assets/images/checkout-mobileflow-04.png">
+				</figure>
+				<div class="case-text-container">
+					<h3>The goals</h3>
+					<p>
+						By launch, a person making a purchase on Helix.com should be able to:
+					</p>
+					<ol>
+						<li>
+							Create a Helix account.
+						</li>
+						<li>
+							Sign in with an existing Helix account.
+						</li>
+						<li>
+							Purchase any app on Helix (with or without a DNA collection kit) with minimum friction.
+						</li>
+						<li>
+							Purchase multiple quantities of the same product as gifts.
+						</li>
+					</ol>
+					<h3> 
+						The non-goals
+					</h3>
+					<ol>
+						<li>
+							Design an entirely different type of checkout experience (e.g. accordion-style vs step-by-step vs single-page checkout).
+						</li>
+						<li>
+							Allow users to purchase multiple apps during a single checkout experience (e.g. shopping cart).
+						</li>
+					</ol>
+				</div>					
+				<!-- <div class="case-asset-container" style="margin-top: 0px;">
+					<h3>
+						The old flow:
+					</h3>
+					<figure>
+						<img src="../assets/images/checkout-old-flow.jpg">
+					</figure>
+				</div> -->
+				<div class="case-text-container">
+					<h3>My role:</h3>
+					<p>
+						<b>1. The good concierge</b></br>
+						One of my main goals when designing the new purchase flow was to help our customers understand what Helix actually does. The metaphor that kept coming to my mind was that buying a first product + DNA kit is like getting a key that opens up the door to the Helix platform. But—once you have that key—you never need another one again. Instead of just explaining this concept with a short copy blurb (because we know no one reads), we baked the concierge into the customer experience.
+					</p>
+					<p>
+						We realized that in order for us to be the best concierge and open doors for existing residents or hand out keys to new ones, we had to first know who’s standing at the door.
+					</p>
+					<p>
+						So if users select the option to purchase a product with a kit on the PDP, the next screen should prompt them to create an account—assuming they’re new to the Helix platform. And when users choose to buy just the product without a kit, we should direct them to the sign-in screen, to then make sure they’ve already been sequenced by Helix and don’t need another DNA kit.
+					</p>
+					<p>
+						Identifying our users at the front door was just the beginning. The project got more interesting when we started to think how mistakes can be introduced and handled by our system. What if a user mistakenly chose to buy a product with a kit when they were already sequenced by Helix? What happens when users try to buy just the app (which is cheaper) when they’ve never been sequenced before? What if users purchased a kit before and want to buy another one, because they gave the first one away as a gift?
+					</p>
+				</div>
+				<figure class="left-half" style="margin: 40px 0">
+					<img class="shadow" src="../assets/images/checkout-create-account.jpg">
+					<figcaption>User selected to purchase a kit, which means that either the user is new, or they made a mistake.</figcaption>
+				</figure>
+				<figure class="right-half" style="margin: 40px 0">
+					<img class="shadow" src="../assets/images/checkout-sign-in.jpg">
+					<figcaption>User selected to purchase app without kit, which means the user already has an account, or they made a mistake.</figcaption>
+				</figure>
+				<div class="case-text-container">
+					<p><b>2. Course correcting our users</b></br>
+						To handle all the possible edge cases for having to purchase a DNA kit or not, we came up with several course correction modals that get triggered based on a few simple queries we make in the user’s account:
+					</p>
+					<ul>
+						<li>
+							— Does the user already own this product?
+						</li>
+						<li>
+							— Did the user register a Helix DNA kit with this account before?
+						</li>
+						<li>
+							— Did a user buy a DNA kit before?
+						</li>
+					</ul>
+					<p style="margin-top: 16px;">
+						Knowing the answers to these questions helps us lead users to the right flow.
+					</p>
+				</div>
+				<div class="case-asset-container">
+					<figure>
+						<img src="../assets/images/checkout-flow-diagram.png">
+					</figure>
+				</div>
+				<figure class="first-qtr">
+					<img src="../assets/images/checkout-correction-phone-01.jpg">
+					<figcaption>Case a: user purchased a kit before but hasn’t registered it yet. Now the user is trying to buy a different app with a kit.</figcaption>
+				</figure>
+				<figure class="second-qtr">
+					<img src="../assets/images/checkout-correction-phone-02.jpg">
+					<figcaption>Case b: user is new to Helix and is now trying to buy an app without the Helix DNA kit.</figcaption>
+				</figure>
+				<figure class="third-qtr">
+					<img src="../assets/images/checkout-correction-phone-03.jpg">
+					<figcaption>Case c: user purchased a kit before and registered it. Now the user is trying to buy a different app, but didn’t remove the kit from the order.</figcaption>
+				</figure>
+				<figure class="fourth-qtr">
+					<img src="../assets/images/checkout-correction-phone-04.jpg">
+					<figcaption>Case d: user already purchased this product in the past and is now trying to purchase it again.</figcaption>
+				</figure>
+				<div class="case-text-container">
+					<p>
+						<b>3. “Order for myself” vs Gift</b></br>
+						When I designed this flow, I tried to think of ways to reduce checkout friction while also dealing with the complexity of making sure users are purchasing the DNA kit when they really need to. Avoiding sending extra kits to users who have already been sequenced was a key priority, so we decided to focus on a single-purchase-for-self as the primary checkout flow, which requires account creation or sign-in in order to bring the course correction into play.
+					</p>
+					<p>
+						Except we didn't want to force our gifters to create a Helix account when they’re purchasing products for others. We decided to split up the flows: one route leads to an “order for myself” flow where the course correction kicks in. The second route leads to a gifting flow, where users can choose to purchase multiple quantities of the same product without having to create a Helix account.
+					</p>
+				</div>
+				<div class="case-asset-container">
+					<figure>
+						<img class="shadow" src="../assets/images/checkout-giftorself.png">
+						<figcaption>User is prompted to select one option: either to purchase for self, or to give as a gift.</figcaption>
+					</figure>
+				</div>
+				<!-- <div class="case-asset-container" style="margin-top:20px;">
+					<figure>
+						<img class="shadow" src="../assets/images/checkout-gift-contact.png">
+						<figcaption>The first screen on the gifting flow.</figcaption>
+					</figure>
+				</div> -->
+				<div class="case-text-container">
+					<p>
+						<b>4. Tailored micro-copy</b></br>
+						Together with my good friend Luke, the UX writer, we concocted different moments of personalized messages throughout the system to keep users engaged and connected to the flow. It was especially relevant in the thank-you message at the very end of the flow, where we wanted to communicate different things to our different customers who just bought a product on Helix. There were several next steps that we had to get our users to take (such as to register their DNA kit, or to verify their email, or to wait for a physician approval) to get the most frictionless Helix experience going forward. So we wrote together 9 different thank you messages, each tailored to the user’s state in the system. Here are just three of them:
+					</p>
+				</div>
+				<figure class="first-third">
+					<img src="../assets/images/checkout-thankyou-01.png">
+					<figcaption>First purchase</figcaption>
+				</figure>
+				<figure class="second-third">
+					<img src="../assets/images/checkout-thankyou-02.png">
+					<figcaption>Second purchase, user didn't register their DNA kit</figcaption>
+				</figure>
+				<figure class="third-third">
+					<img src="../assets/images/checkout-thankyou-03.png">
+					<figcaption>Second purchase of a product requiring physician approval</figcaption>
+				</figure>
+				<div class="case-text-container">
+					<h3>Results</h3>
+					<p>
+						Through this redesign, we built a foundation that will allow future Helix users to make the purchase that’s right for them, without compromising the user experience. We hope that our design decisions help clarify Helix’s “sequence once, query often” model, which is always a challenge to explain.
+					</p>
+					<p>
+						While it’s still early, we expect the purchase funnel to change due to the new create account/sign-in requirement. However, we also expect an increase in the number of people purchasing DNA-powered products and joining the Helix community.
+					</p>
+				</div>
+			</article>
+			<section class="next-prev"">
+				<h3 class="previous-project"><a href="pdp-redesign.html">&#9754; Previous project</a></h3>
+				<h3 class="next-project"><a href="helix-styleguide.html">Next project &#9755;</a></h3>
+			</section>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../assets/js/vendor/jquery.simpleWeather.min.js"></script>
+  		<script type="text/javascript" src="../assets/js/index.js"></script>
+	</body>
+</html>

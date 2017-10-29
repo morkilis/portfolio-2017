@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="" class=no-js>
+	<head>
+		<meta charset=utf-8>
+		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+		<meta itemprop=image content=/images/share-image.png>
+		<title>Exquisite Corpse</title>
+		<meta name=description content="Maurann Stein portfolio website">
+		<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<link rel=apple-touch-icon href=/images/favicon.ico type=image/x-icon>
+		<link rel=icon href=/images/favicon.ico type=image/x-icon>
+		<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+		<link rel="stylesheet" href="../assets/main.css">
+	</head>
+	<body class="case">
+		<main>
+			<article class="downward">
+				<div class="case-text-container">
+					<a href="../index.html"><h4 style="margin-bottom: 60px;">Maurann Stein</h4></a>
+					<p>1st place @ Design & Hack Hackathon</p>
+					<h2>Exquisite Corpse</h2>
+					<h3>A nod to a technique invented by the surrealists, Exquisite Corpse is a collaborative game app designed for 3-8 players who are not afraid to be silly.
+					</h3>
+				</div>
+				<figure class="first-third">
+					<video  width="100%" height="auto" autoplay="true" style="margin-left: -50px;">
+					  	<source src="../assets/videos/EC.mp4" type="video/mp4">
+					  	<source src="/../assets/videos/EC.ogg" type="video/ogg">
+					  	Your browser does not support the video tag.
+					</video>
+				</figure>
+				
+				<div class="case-text-container">
+					<h3>The game</h3>
+					<p>
+						The idea to this app was born at Parsons’ Design & Hack hackathon, when Feras, Mark and I met each other and decided that we want to work on something fun. We spent the first few hours at the hackathon thinking, talking, getting to know eachother. When we felt more comfortable being silly together (and tired) our conversation reminded me of a game I used to play as a child. I explained Exquisite Corpse to them as I knew it in text form (apparently many people know its drawing version) and we played it just for laughs. Soon many people from other teams saw us laughing and asked if they could join us and play. It turned into a group of about 8 people playing this game together and laughing like kids. In a way, we conducted our first user testing before we even knew it.
+					</p>
+					<p>
+						To readers who don’t know Exquisite Corpse, I found a great explanation of it on Poets.org:
+					</p>	
+					<p style="font-style: italic; opacity: .6; padding-left: 40px;">
+						<span>
+							“Exquisite Corpse is a collaborative poetry game that traces its roots to the Parisian Surrealist Movement. Exquisite Corpse is played by several people, each of whom writes a word on a sheet of paper, folds the paper to conceal it, and passes it on to the next player for his or her contribution. […] The only hard and fast rule of Exquisite Corpse is that each participant is unaware of what the others have written, thus producing a surprising—sometimes absurd—yet often beautiful poem. Exquisite Corpse is a great way to collaborate with other poets, and to free oneself from imaginative constraints or habits. Remember, many of the most effective phrases or metaphors are those that are most surprising.”
+						</span>
+					</p>
+				</div>
+				<figure class="left-half" style="margin: 60px 0 40px 0">
+					<img src="../assets/images/ec-01.jpg">
+					<figcaption>Mark, myself and Feras brainstorming ideas</figcaption>
+				</figure>
+				<figure class="third-qtr">
+					<img src="../assets/images/ec-02.jpg">
+					<figcaption>
+						Victor Brauner, Jacques Hérold, Violette Hérold, Yves Tanguy and Raoul Ubac, *Untitled “Cadavre exquis” (“Exquisite Corpse”),* 1938. Graphite and collage on paper, 10 3/8 x 8 1/16″. Collection of Howard and Mauree Miller, Pennsylvania.
+					</figcaption>
+				</figure>
+				<div class="case-text-container">
+					<h3>Analyzing the flow</h3>
+					<p>
+						We tried to define what it is that makes this game so fun and amusing to us, and came to the conclusion that it’s the anticipation to unfold the paper and to reveal unexpected marriages between thoughts, ideas, words. We decided that the interaction of folding the paper in the physical game and the magical experience of unfolding it at the end were worth exploring in an app form, and we quickly began sketching out flows together.
+					</p>
+					<p>
+						The flow on the left demonstrates our very initial response when we tried to translate the physical game into digital/interactive form. The rectangles represent key pages, the rounded rectangles represent moments where users are asked to make a decision, and the dotted rectangles represent animations.
+					</p>
+				</div>
+				<figure class="left-half" style="margin: 60px 0 40px 0">
+						<img src="../assets/images/ec-diagram.png">
+				</figure>
+				<div class="case-text-container">
+					<h3>New experiences</h3>
+					<p>
+						We realized we must figure out how to introduce magic to the game, and we finally came up with a few basic mechanisms to add to the experience:
+					</p>
+				</div>
+				<figure class="first-sixth">
+					<img src="../assets/images/ec-03.gif">
+				</figure>
+				<p class="text-next-to-asset">
+					<b>Viewport as window</b>: 
+					Instead of the page-folding technique, we used the nature of the phone as a window to reveal just a part of the content. So when a player’s turn is over, we simply animate the inputed text upwards, as if to force scrolling up to a certain point which makes only the last line of the text visible.
+				</p>
+				<figure class="first-sixth">
+					<img src="../assets/images/ec-04.gif">
+				</figure>
+				<p class="text-next-to-asset">
+					<b>Round selection</b>: 
+					During a few test games we played with paper and pens, we noticed that sometimes people don’t have patience and want to play a short game. We came to the conclusion that constraining players in terms of round numbers (1-5) conserves the momentum of the game, so we added the “round selection” feature.
+				</p>
+				<figure class="first-sixth" style="display: flex;">
+					<img src="../assets/images/ec-05.gif" style="width:50%; margin: auto; margin-top: 0;">
+				</figure>
+				<p class="text-next-to-asset">
+					<b>Timer</b>: 
+					A 15 second timer was added for each player’s turn in order to prompt players to develop the written narrative. This addition helped improve the quality of the stories as well; it made the writing less precious and players became motivated to write what’s on their mind without overthinking it too much...
+				</p>
+				<div class="case-text-container">
+					<h3>Typography & color</h3>
+					<p>
+						In our game, the typography is playing a key role since there is no use of imagery altogether. It was important for us to make sure we are communicating our ideas and agenda through the type treatment.
+					</p>
+					<p>
+						We chose Lora Regular as the primary typeface for all the narrative-text because of its serifs, its delicacy and legibility. We aimed give the players a sense of storytelling, as if they were collaboratively writing a story - but with some spice. We set Lora big to increase legibility (maybe people want to play this game tipsy in a bar?), and in varying vibrant colors between players.
+					</p>
+					<p>
+						Due to technical reasons, we wanted to avoid a situation where players add their text on the same line as the former player. So we set up the type in a way that lets only 3-5 words take up each line of text. This solution allows a smoother transition between players’ turns, as the page scrolles up to reveal only the last line of text with the cursor ready on the next.
+					</p>
+					<p>
+						To differenciate the game-narrative from the rest of the text (instructions, messages etc.) we used Roboto, smaller and in black.
+					</p>
+				</div>
+				<figure class="left-half">
+					<img src="../assets/images/ec-06.png">
+				</figure>
+				<div class="case-text-container">
+					<h3>“The End”</h3>
+					<p>
+						We wanted to create a delightful and special moment at the very end, right before revealing the entire story. So we came up with a very sweet animation in which the last player's timer shrinks down (or in this exampe's case when a player decides to terminate the game - the background shrinks down) and animates into the period at the end of the last sentence.
+					</p>
+				</div>
+				<figure class="first-third">
+					<img class="shadow" src="../assets/images/ec-end.gif">
+				</figure>
+				<div class="case-text-container">
+					<h3>Coming up with a logo</h3>
+					<p>
+						The logo was one of our last-minute touches. I like its simplicity and how it reflects the intrinsic mechanism of the game: every new textual addition players contribute to the story is visually paralleled to a colored building block.
+					</p>
+				</div>
+				<figure class="first-third">
+					<img class="shadow" src="../assets/images/ec-07.gif">
+				</figure>
+			</article>
+			<section class="next-prev"">
+				<h3 class="previous-project"><a href="../index.html">Back home</a></h3>
+				<h3 class="next-project"><a href="anti-alias.html">Next project &#9755;</a></h3>
+			</section>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../assets/js/vendor/jquery.simpleWeather.min.js"></script>
+  		<script type="text/javascript" src="../assets/js/index.js"></script>
+	</body>
+</html>
