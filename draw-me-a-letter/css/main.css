@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body{
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+background: white;
+/*font-family: 'Raleway', 'sans-serif';*/
+font-family: 'Roboto', sans-serif;
+font-size: 0;
+margin: 0;
+}
+
+.title{
+text-align: center;
+width:70px;
+position: fixed;
+left:50%;
+margin: 20px 0 0 -35px;
+font-size: 16px;
+font-weight: regular;
+z-index: 3;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+.title:hover{
+/*font-size: 17px;*/
+-webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+cursor: pointer;
+}
+
+
+#instructions-wrapper{
+width:100%;
+height: 100%;
+background: #aefcc9; /* Old browsers */
+background: -moz-linear-gradient(top,  #aefcc9 0%, #96fff1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aefcc9), color-stop(100%,#96fff1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #aefcc9 0%,#96fff1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #aefcc9 0%,#96fff1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #aefcc9 0%,#96fff1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #aefcc9 0%,#96fff1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aefcc9', endColorstr='#96fff1',GradientType=0 ); /* IE6-9 */
+
+z-index: 2;
+position: fixed;
+
+}
+
+.instructions{
+width:720px;
+margin: 200px auto;
+font-size: 25px;
+line-height: 30px;
+}
+
+#next {
+width: 111px;
+border: 1px solid black;
+padding: 5px 7px;
+-o-transition:.8s;
+      -ms-transition:.8s;
+         -moz-transition:.8s;
+            -webkit-transition:.8s;
+transition:.8s;
+}
+
+#next:hover{
+cursor: pointer;
+background-color: rgba(255,255,255,0.8);
+}
+
+
+
+#map-wrapper{
+width: 920px;
+height: 100%;
+margin: 0 auto;
+position: relative;
+z-index: 0;
+}
+
+#svg-container, #circle-container{
+width: 100%;
+height: 412px;
+position: absolute;
+top: 50%;
+margin-top: -250px;
+background-color: transparent;
+/*opacity: 0.3;
+*/}
+
+.hidden{
+display: none;
+}
+
+#map{
+stroke: #000000;
+stroke-width: 3;>
+}
+
+.buttons {
+   position: fixed;
+   width:50px;
+   height:50px;
+   left:50%;
+   top: 4px;
+   z-index: 1;
+   cursor: pointer;
+   background-repeat: no-repeat;
+   background-size: 46px auto;
+}
+
+#text_button{
+   background-image: url(open-eye.png);
+   margin: 25px 0 0 45px;
+}
+
+#eye {
+   width: 46px;
+   height: auto;
+}
+
+#save {
+   margin: 22px 0 0 -92px;
+   background-image: url(download2.png);
+}
+
+#save:hover {
+   background-image: url(download.gif);   
+}
+
+
+#text-box-wrapper{
+   position: absolute;
+   bottom:14px;
+   left:50%;
+   margin-left: -250px;
+}
+
+.start {
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+#start {
+padding-top: 200px;
+text-align: center;  
+font-size: 17px;
+font-weight: regular;
+z-index: 3;
+color: #aaa;
+-o-transition:.8s;
+      -ms-transition:.8s;
+         -moz-transition:.8s;
+            -webkit-transition:.8s;
+transition:.8s;
+}
+
+#mask {
+position: fixed;
+width: 500px;
+height: 26px;
+background-color: transparent;   
+}
+
+.text-box{
+width: 500px;
+height: 26px;
+background-color: white;
+font-size: 20px;
+outline:none;
+color: white;
+border: 1px solid white;
+}
+
+/*hack for the autofocus of text-box*/
+.far-far-away{ 
+color: black;
+border: 1px solid black;
+}
+
+.circle {
+ position: absolute;
+ width: 4px;
+ height: 4px;
+ border-radius: 50%;
+ opacity: 100%;
+ transition:all 0.3s ease;
+} 
+
+.grow-circle {
+   animation: grow 0.4s normal forwards ease-in-out;
+}
+
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(20);
+      -ms-transform: scale(20);
+          transform: scale(20);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 920px) {
+   .party-poop {
+      background-color: white;
+      z-index: 100;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+   }
+   p {
+      font-size: 24px;
+      padding: 25% 20%;
+   }
+   strong {
+      -webkit-animation: color_change 2s infinite alternate;
+      -moz-animation: color_change 2s infinite alternate;
+      -ms-animation: color_change 2s infinite alternate;
+      -o-animation: color_change 2s infinite alternate;
+      animation: color_change 2s infinite alternate;
+   }
+
+   @keyframes color_change {
+      0% { color: blue; }
+      25% { color: purple; }
+      50% { color: red; }
+      75% { color: orange; }
+      100% { color: lime; }
+   }
+}

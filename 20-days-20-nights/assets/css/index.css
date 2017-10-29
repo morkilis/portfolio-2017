@@ -1,0 +1,464 @@
+html,body{
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+font-size:0px;
+vertical-align: top;
+
+}
+
+#night-container::-webkit-scrollbar { width: 0 !important }
+
+/*===== BORDER ======*/
+.black-border{
+background-color: black;
+position: fixed;
+z-index: 100;
+}
+
+#left{
+top: 0;
+left: 0;
+bottom: 0;
+width: 15px;
+}
+
+#right{
+top: 0;
+bottom: 0;
+width: 15px;
+right: 0; 
+}
+
+#top{
+left: 0; 
+right: 0;
+height: 15px;
+top: 0;
+}
+
+#bottom {
+left: 0; 
+right: 0;
+height: 15px;
+bottom: 0; }
+
+#middle{
+left: 50%; 
+margin-left:-7px;
+width: 15px;
+top: 0;
+bottom: 0;
+}
+
+/*===== content ======*/
+
+
+.wrapper{
+position:relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.container{
+width:50%;
+height:100%;
+display: inline-block;
+position:relative;
+vertical-align: top;
+/*background-color: cyan;
+*/
+}
+
+#night-container{
+background-color: black;
+color: white;
+overflow: scroll;
+z-index: 1700;
+}
+
+.container-right{
+margin:50px;
+/*background-color: yellow;
+*/
+}
+
+.container-left{
+position: relative;
+margin:0px 50px;
+
+
+}
+.title{
+width:90px;
+background-color: ;
+font-size: 14px;
+font-weight: normal;
+font-family: Helvetica, sans-serif;
+letter-spacing: 2px;
+position: fixed;
+z-index: 2000;
+}
+
+
+.title.right{
+font-weight: bold;
+right:-4px;
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+
+.title.left{
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+transform: rotate(-90deg);
+left:-10px;
+}
+
+.title.top.left{
+top:25px;
+}
+.title.bottom.left{
+bottom:65px;
+}
+
+.title.top.right{
+top:75px;
+}
+
+
+.title.bottom.right{
+bottom:37px;
+}
+
+.text{
+font-size: 24px;
+font-family: Times, serif;
+display: inline-block;
+letter-spacing: 6px;
+margin:25px 0 60px 0;
+padding: 0px 5% 0 5% ;
+color:white;
+}
+
+.symbol{
+display: inline-block;
+}
+
+.day-image{
+position: absolute;
+top:50%;
+left:50%;
+margin:-153px 0 0px -208px;
+background-color: yellow;
+}
+
+#day-image{
+height:301px;
+width: 405px;
+position: absolute;
+box-shadow: 3px 3px 5px rgba(0,0,0, 0.7);
+border: 2px solid black;
+padding: 10px;
+}
+
+
+.hidden{
+display: none;
+}
+
+
+.dice-button{
+width:10px;
+height: 16px;
+padding: 10px 10px 10px 10px;
+position: fixed;
+left:50%;
+top:50%;
+color: white;
+background-color: black;
+border-top:4px solid white;
+border-left:4px solid white;
+border-bottom:4px solid white;
+text-align: center;
+cursor: pointer;
+margin-left: -26px;
+margin-top: -8px;
+z-index: 8000;
+overflow: hidden;
+}
+
+#white-bg{
+width:40px;
+font-weight: bold;
+color: black;
+background-color: white;
+border-top:4px solid black;
+border-right:4px solid black;
+border-left:4px solid transparent;
+border-bottom:4px solid black;
+margin-left: -27px;
+z-index: 7500;
+}
+
+
+.dice{
+height:70px;
+width:70px;
+background-repeat: no-repeat;
+background-image: url(../img/dice.gif);
+background-size:70px 70px; 
+position: fixed;
+z-index: 7000;
+}
+
+.animate-dice{
+-webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+
+  -webkit-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+       -o-animation-duration: 3s;
+          animation-duration: 3s;
+
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+  -webkit-rotation-point: 50% 50%;
+     -moz-rotation-point: 50% 50%;
+       -o-rotation-point: 50% 50%;
+          rotation-point: 50% 50%;
+}
+
+
+.day-night{
+height:70px;
+width:70px;
+background-size:75px 75px; 
+background-repeat: no-repeat;
+background-image: url(../img/black-daynight.gif);
+position: fixed;
+z-index: 7000;
+}
+
+
+.animate-day-night{
+    -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+  -webkit-rotation-point: 50% 50%;
+     -moz-rotation-point: 50% 50%;
+       -o-rotation-point: 50% 50%;
+          rotation-point: 50% 50%;
+}
+
+
+@-webkit-keyframes rotate {
+  from { -webkit-transform: rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotate {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(360deg); }
+}
+@-o-keyframes rotate {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(360deg); }
+}
+@keyframes rotate {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(360deg); }
+}
+
+
+
+@-webkit-keyframes rotatetwo {
+  from { -webkit-transform: rotate(0deg); }
+  to   { -webkit-transform: rotate(-360deg); }
+}
+@-moz-keyframes rotatetwo {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(-360deg); }
+}
+@-o-keyframes rotatetwo {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(-360deg); }
+}
+@keyframes rotatetwo {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(-360deg); }
+}
+
+
+.dice-wrapper{
+height:70px;
+width:70px;
+background-repeat: no-repeat;
+position: absolute;
+}
+
+
+
+
+
+
+button {
+    font-weight: bold;
+    padding:10px;
+    font-size: 24px;
+    border: 10px outset;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    outline: none;
+}
+
+button:hover {
+    border: 10px inset;
+}
+
+button:active {
+    border: 10px outset;
+}
+
+h1,h2,h3,h4,h5 {
+    margin:0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+
+#rules {
+    padding:20px;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    background-color: yellow;
+}
+
+.player {
+    background-color: #eee;
+    margin:20px 0 0 20px;
+    display: inline-block;
+    padding:20px;
+}
+
+.die {
+    background-color: lime;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+
+
+/*rotation code*/
+
+.fragment {
+  position: absolute;
+
+
+  list-style: none;
+
+
+  margin: 0;
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+.fragment img {
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+
+  -webkit-animation-duration: 25s;
+     -moz-animation-duration: 25s;
+       -o-animation-duration: 25s;
+          animation-duration: 25s;
+
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+  -webkit-rotation-point: 50% 50%;
+     -moz-rotation-point: 50% 50%;
+       -o-rotation-point: 50% 50%;
+          rotation-point: 50% 50%;
+}
+
+@-webkit-keyframes rotate {
+  from { -webkit-transform: rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes rotate {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(360deg); }
+
+
+}
+
+@keyframes rotate {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(360deg); }
+}

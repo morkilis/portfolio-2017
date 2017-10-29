@@ -1,0 +1,32 @@
+<html>
+   <head>
+   <head lang="en">
+   <meta charset="utf-8">
+    <title>Hello.</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   </head>
+   <body>
+      <main>
+          <p>Hello.</p>
+          <p>I would like you to</p>
+          <p id="content"></p>
+          <p>Send me the result, along with <a id="download">this</a>.</p>
+      </main>
+      <script src="assets/js/html2canvas.js"></script>
+      <script src="assets/js/app.js"></script>
+      <script src='assets/js/okshadow.js'></script>
+      <script>
+          $(function(){
+              $('a').okshadow({
+                  color: '#453c2d',
+                  xFactor: 1000,
+                  yFactor: 1000,
+                  textShadow: true,
+                  transparent: false
+              });
+          });
+      </script>
+   </body>
+</html>

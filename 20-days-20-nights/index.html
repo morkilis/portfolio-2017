@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> 20 Days & 20 Nights</title>
+		<link rel="stylesheet" href="assets/css/index.css">
+		<link rel="icon" type="image/png" href="assets/img/favicon2.png">
+
+	</head>
+	<body>
+
+<!-- BORDER -->
+<div class="black-border" id="left"></div>
+<div class="black-border" id="right"></div>
+<div class="black-border" id="top"></div>
+<div class="black-border" id="bottom"></div>
+<div class="black-border" id="middle"></div>
+
+<!-- DICE --> <!-- the id is important because of the getElementByID -->
+<div class="dice-wrapper"><div class="dice animate-dice" id="dice"></div></div> 
+<div class="dice-wrapper"><div class="day-night animate-day-night" id="day-night"></div></div>
+
+
+<!-- CONTENT -->
+			<div class="wrapper">
+			
+				<div class="container" id="night-container">
+					<div class="container-left">
+						<div class="title left top">Dream </div>
+						<div class="title left bottom">Night &nbsp;#<span class="dream-number"></span></div>
+						<div class="text dream">
+						
+						</div>
+<!-- 						<div class="symbol left"><img src="assets/img/shut-eyes.png" style="width: 80px; height:auto"></div>
+ -->					</div>
+				</div>
+
+				<div class="container" id="day-container">
+					<div class="container-right">
+						<div class="title right top">Day &nbsp;#<span class="day-number"><span></div>
+						<div class="title right bottom">Reality </div>
+						<div class="day-image"></div>
+<!-- 						<div class="symbol right"><img src="assets/img/asterix.png" style="width: 50px; height:auto"></div>	
+ -->
+					</div>
+				</div>
+			
+
+			<div class="title dice-button roll">Roll</div>
+			<div class="title dice-button roll" id="white-bg">Roll</div>
+
+	<!-- <div id="rules">
+    <h2>Game Rules</h2>
+	</div> -->
+
+	<!-- <div id="game-board">
+	</div> -->
+<script src="assets/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/framework/rules.js"></script>
+<script src="assets/js/framework/dice_scoring.js"></script>
+<script src="assets/js/framework/dice_game_board.js"></script>
+<script src="assets/js/framework/dice_core.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+
+
+
+	</body>	
+</html>

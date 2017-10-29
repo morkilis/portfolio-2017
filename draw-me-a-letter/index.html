@@ -1,0 +1,118 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>
+	Draw Me A Letter
+	</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div class="party-poop">
+		<p>
+			<strong>Aw sorry about that.</strong><br><br> This website is way too cool to be viewed on a small device. Check it out on your computer!
+		</p>
+	</div>
+	<div class="title">
+		<a>
+			DRAW ME A LETTER
+		</a>
+	</div>
+	<div class="buttons" id="text_button"><img id="eye" src="css/closed-eye.png"/></div>
+	<div class="buttons" id="save"></div>
+	<div id="map-wrapper">
+		<!-- <img src="css/keyboard.png"/> -->
+		<div id="circle-container">
+		</div>
+		<div id="svg-container">
+			<div class="start">
+				<p id="start">
+					BEGIN TYPING
+				</p>
+			</div>
+			<svg id="map" width="920" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			</svg>
+		</div>
+	</div>
+	<!-- <a data-initial-name="Let me see what I just wrote!" data-next-name="Hide what I just wrote!" data-target="#hide_reveal" href="#" id="text_button">
+		Let me see what I just wrote!
+	</a> -->
+	<div id="text-box-wrapper">
+		<div id="mask"></div>
+		<input spellcheck="false" autofocus="autofocus" class="text-box" id="text-box"/>
+	</div>
+	<div id="svgdataurl" class="hidden" style="background-color:white"></div>
+	<canvas width="920" height="400" style="display:none; background-color:white"></canvas>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
+
+<!-- 
+` 40 94
+1 105 94
+tab 62 258
+2 165 94
+q 133 158
+3 230 94
+w 195 158
+4 190 94
+e 260 158
+5 350 94
+r 320 158
+6 415 94
+t 380 158
+7 475 94
+y 445 158
+8 535 94
+u 505 158
+9 600 94
+i 565 158
+0 660 94
+o 630 158
+- 722 94
+p 690 158
+= 785 94
+[ 750 158
+<x 865 94
+] 815 158
+enter 855 220
+\ 875 158
+' 770 220
+R shift 840 280
+right 878 357
+up 815 325
+down 815 357
+left 752 357
+/ 735 280
+R option 690 340
+; 706 220 
+. 680 280
+l 645 220
+, 615 280
+k 580 220
+m 550 280
+R command 622 340
+space 430 340
+n 490 280
+j 525 220
+h 460 220
+b 430 280
+g 395 220
+v 365 280
+c 305 280
+d 272 220
+x 242 280
+s 210 220
+z 180 280
+a 150 220
+CAPS 65 220
+L shift 81 280
+fn 40 340
+control 105 340
+L option 165 340
+L command 236 340
+ -->
