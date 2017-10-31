@@ -91,6 +91,7 @@ $(document).ready(function() {
     $( ".info-lightbox" ).removeClass( "is-visible" );
     $( "main" ).removeClass( "locked" );
     $( "footer" ).removeClass( "hidden peek" );
+    window.scrollTo(0,0);
   });
 
   //open helix-lightbox
