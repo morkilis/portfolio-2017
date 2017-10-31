@@ -13,7 +13,6 @@
 	src:url(fonts/basis-grotesque-off-white.woff);
 }
 
-
 /*normalize*/
 h1,h2,h3, h4, h5, h6 {
 	font-size: 1em;
@@ -72,7 +71,6 @@ figure {
 	    animation-timing-function: ease-in;
 	}
 }
-
 	
 .downward {
 	-webkit-animation: fade-in 2s;
@@ -259,7 +257,6 @@ article {
 	grid-column-end: 4;
 	padding-top: 60px;
 	position: relative;
-
 }
 
 .right {
@@ -377,7 +374,6 @@ footer article {
     position: fixed;
     width: 228px;
 }
-
 
 .info-img {
 	height: 228px;
@@ -639,7 +635,6 @@ aside.position {
 	padding: 20px;
 	display: flex;
 	transition: all 0.2s ease-in-out;
-	
 }
 
 .project-block:hover {
@@ -702,13 +697,11 @@ aside.position {
 	margin-bottom: 32px;
 }
 
-
 .project-img img {
 	position: absolute;
 	height:100%; 
 	width: auto; 
-	right: 0;
-	
+	right: 0;	
 }
 
 img.cover:hover{
@@ -778,7 +771,6 @@ img.cover:hover{
 
 .case img {
 	width: 100%;
-
 }
 
 .shadow {
@@ -795,13 +787,12 @@ img.cover:hover{
 .next-prev h3 {
 	margin: 0 0 100px 0;
 }
-/*================================================*/
+
 /*================================================*/
 
 @media screen and (max-width:1023px){
 
 /*==================  TYPOGRAPHY  ==================*/
-
 
 h1, h2{
 	font-size: 44px;
@@ -1033,7 +1024,6 @@ footer figure {
 
 footer .sub-proj-img {
 	height: 124px;
-
 }
 
 .next-prev h3 {
