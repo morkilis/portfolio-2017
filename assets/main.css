@@ -1005,7 +1005,7 @@ footer h3 {
 }
 
 .peek {
-	bottom: -510px
+	bottom: -450px
 }
 
 .show {
@@ -1023,13 +1023,13 @@ footer .second-sixth, footer .fourth-sixth, footer .sixth-sixth {
 }
 
 footer figure {
-	width: 116px !important;
-	height: 116px !important;
-	margin-bottom: 40px;
+	width: 94px !important;
+	height: 94px !important;
+	margin-bottom: 60px;
 }
 
 footer .sub-proj-img {
-	height: 116px;
+	height: 94px;
 }
 
 .next-prev h3 {
