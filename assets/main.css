@@ -804,7 +804,7 @@ h1, h2{
 /*==================  LAYOUT  ==================*/
 
 body {
-	margin: 20px;
+	margin: 20px 20px 0 20px;
 
 }
 
@@ -990,7 +990,10 @@ figcaption {
 
 footer {
 	margin-left: -20px;
-	bottom: -1000px;
+	width: 100vw;
+	position: relative;
+	bottom: unset;
+	padding-bottom: 20px;
 }
 
 footer article {
@@ -1005,7 +1008,7 @@ footer h3 {
 }
 
 .peek {
-	bottom: -450px
+	bottom: 0;
 }
 
 .show {
@@ -1023,13 +1026,21 @@ footer .second-sixth, footer .fourth-sixth, footer .sixth-sixth {
 }
 
 footer figure {
-	width: 94px !important;
-	height: 94px !important;
+	width: 112px !important;
+	height: 112px !important;
 	margin-bottom: 60px;
 }
 
 footer .sub-proj-img {
-	height: 94px;
+	height: 112px;
+}
+
+#more-stuff-link::after { 
+    content: "more stuff";
+}
+
+.show #more-stuff-link::after { 
+    content: "more stuff";
 }
 
 .next-prev h3 {
