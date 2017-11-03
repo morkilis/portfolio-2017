@@ -947,6 +947,7 @@ aside.date, aside.position {
 .project-block {
 	grid-column-start: 1;
 	grid-column-end: 4;
+	display: unset;
 }
 
 .project-block:hover {
@@ -957,6 +958,15 @@ aside.date, aside.position {
 
 .project-img:hover, .sub-proj-img:hover{
 	margin-top: 0;
+}
+
+.project-block .thumb {
+    margin: 8px auto;
+    margin-bottom: 24px;
+}
+
+.project-block .desc-container {
+	width: 100%;
 }
 
 .figures-container {
