@@ -1004,6 +1004,7 @@ footer {
 	position: relative;
 	bottom: unset;
 	padding-bottom: 20px;
+	margin-top: -60px;
 }
 
 footer article {
