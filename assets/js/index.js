@@ -1,7 +1,7 @@
 "use strict";
 
 function getTheTime() {
-	var offset = 2;
+	var offset = 3;
 	var x = new Date( new Date().getTime() + offset * 3600 * 1000)
 	var hoursIn24Format = x.getUTCHours();
 	var hours = hoursIn24Format > 12 ? hoursIn24Format - 12 : hoursIn24Format;
